@@ -1938,7 +1938,11 @@ pub struct FieldDef {
     pub vis: Visibility,
 }
 
-/// The definition of an abstract data type -- a struct or enum.
+/// The definition of an [*algebraic data type (ADT)*][adt].
+/// These include `struct`s (products), `enum` (sums).
+/// A `union` is also represented here but is not an ADT.
+///
+/// [adt]: https://en.wikipedia.org/wiki/Algebraic_data_type
 ///
 /// These are all interned (by `intern_adt_def`) into the `adt_defs` table.
 pub struct AdtDef {

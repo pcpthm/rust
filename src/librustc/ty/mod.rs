@@ -1939,7 +1939,7 @@ pub struct FieldDef {
 }
 
 /// The definition of an [*algebraic data type (ADT)*][adt].
-/// These include `struct`s (products), `enum` (sums).
+/// These include `struct`s (products) and `enum`s (sums).
 /// A `union` is also represented here but is not an ADT.
 ///
 /// [adt]: https://en.wikipedia.org/wiki/Algebraic_data_type
